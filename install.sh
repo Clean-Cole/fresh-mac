@@ -41,6 +41,11 @@ brew install pyenv
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
 
+# Install Go Version Manager
+brew install mercurial
+zsh < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+echo 'source ~/.gvm/scripts/gvm' >> ~/.zshrc
+gvm listall
 
 # Node Version Manager
 brew install nvm
@@ -48,6 +53,9 @@ mkdir ~/.nvm || true;
 echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
 echo '  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm' >> ~/.zshrc
 echo '  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion' >> ~/.zshrc
+
+# .NET SDK for Mac
+brew cask install dotnet-sdk
 
 ##### Common and Misc Installs
 brew install iterm2

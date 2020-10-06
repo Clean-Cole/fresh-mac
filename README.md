@@ -17,8 +17,15 @@ Couple scripts for setting up a fresh mac when that happens
 - Brew analytics capture
 - Deletes GarageBand and iMovie
 
-#### Installs
+#### Setups Code and Version Managers for...
+- `pyenv` - Python Version Manager
+- `nvm` - Node Version Manager
+- `gvm` - Go Version Manager
+- `dart` - brew installation of dart
+- `fvm` - Flutter Version Manager
+- `dotnet` - .NET sdk
 
+#### Installs
 - [iTerm2](https://www.iterm2.com/) - 
 Supercharged terminal
 - [sizeup](https://www.irradiatedsoftware.com/sizeup/) - 
