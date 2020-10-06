@@ -24,6 +24,10 @@ mkdir ~/code || true;
 brew analytics off
 
 ##### Install Coding Tools
+
+git config --global user.email "cole@imakethe.com"
+git config --global user.name "Cole Stevenson"
+
 brew cask install jetbrains-toolbox
 brew cask install visual-studio-code
 brew install cocoapods
