@@ -5,21 +5,23 @@
 sudo rm -rf /Applications/GarageBand.app
 sudo rm -rf /Applications/iMovie.app
 
-# Run Apple Updates First
+# Run apple updates
 softwareupdate --all --install --force
 
-## Setup The Big Stuff
+# Change to dark mode
+defaults write -g AppleInterfaceStyle Dark
 
+# Fix the scroll direction to not be like a phone (shudders)
+defaults write -g com.apple.swipescrolldirection -bool FALSE
+
+# create required folders and files
 mkdir ~/.ssh || true;
 touch ~/.zshrc || true;
-
-# Fix the scroll direction..
-defaults write -g com.apple.swipescrolldirection -bool FALSE
+mkdir ~/code || true;
 
 # Install Brew and turn analytics off
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew analytics off
-
 
 ##### Install Coding Tools
 brew cask install jetbrains-toolbox
@@ -55,7 +57,7 @@ brew cask install mailplane
 brew cask install synergy
 brew cask install 1password
 brew cask install 1password-cli
-brew cask install discord
+brew cask install discordA
 brew cask install miro
 brew cask install abstract
 brew cask install postman
@@ -79,3 +81,5 @@ echo 'eval "$(starship init zsh)"' >> ~/.zshrc # this has to be very very last
 
 # Open Things That Need Attention or Logins
 open /Applications/Docker.app # need to open this symlink some docker stuff
+
+echo "Now restart this computer for everything to take effect."
