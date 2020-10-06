@@ -1,6 +1,9 @@
 ## Login with apple ID first
 # TODO: add to readme
 
+# Remove stuff we don't want
+sudo rm -rf /Applications/GarageBand.app
+sudo rm -rf /Applications/iMovie.app
 
 # Run Apple Updates First
 softwareupdate --all --install --force
@@ -52,6 +55,18 @@ brew cask install mailplane
 brew cask install synergy
 brew cask install 1password
 brew cask install 1password-cli
+brew cask install discord
+brew cask install miro
+brew cask install abstract
+brew cask install postman
+brew cask install sequel-pro
+brew install wp-cli
+brew cask install skitch
+brew cask install spotify
+brew cask install cyberduck
+brew tap homebrew/cask-drivers
+brew cask install logitech-options
+brew cask install slack
 
 # This is part of pyenv and has to be put at the end of the profile
 echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
@@ -59,3 +74,7 @@ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nf
 # Starship makes ther terminal look cool
 brew install starship
 echo 'eval "$(starship init zsh)"' >> ~/.zshrc # this has to be very very last
+
+
+# Open Things That Need Attention or Logins
+open /Applications/Docker.app # need to open this symlink some docker stuff
