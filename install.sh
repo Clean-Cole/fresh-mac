@@ -67,6 +67,7 @@ brew cask install cyberduck
 brew tap homebrew/cask-drivers
 brew cask install logitech-options
 brew cask install slack
+brew cask install docker
 
 # This is part of pyenv and has to be put at the end of the profile
 echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
