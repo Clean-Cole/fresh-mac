@@ -1,6 +1,3 @@
-## Login with apple ID first
-# TODO: add to readme
-
 # Remove stuff we don't want
 sudo rm -rf /Applications/GarageBand.app
 sudo rm -rf /Applications/iMovie.app
@@ -73,6 +70,7 @@ brew cask install cyberduck
 brew tap homebrew/cask-drivers
 brew cask install logitech-options
 brew cask install slack
+brew cask install microsoft-teams
 brew cask install docker
 
 # This is part of pyenv and has to be put at the end of the profile
