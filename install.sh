@@ -80,6 +80,7 @@ brew cask install logitech-options
 brew cask install slack
 brew cask install microsoft-teams
 brew cask install docker
+brew install awscli
 
 # This is part of pyenv and has to be put at the end of the profile
 echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
