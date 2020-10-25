@@ -89,6 +89,8 @@ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nf
 brew install starship
 echo 'eval "$(starship init zsh)"' >> ~/.zshrc # this has to be very very last
 
+# Aerial is a crazy cool screensaver
+brew cask install aerial
 
 # Open Things That Need Attention or Logins
 open /Applications/Docker.app # need to open this symlink some docker stuff
