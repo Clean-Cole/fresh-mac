@@ -25,8 +25,8 @@ brew analytics off
 git config --global user.email "cole@imakethe.com"
 git config --global user.name "Cole Stevenson"
 
-brew cask install jetbrains-toolbox
-brew cask install visual-studio-code
+brew install --cask jetbrains-toolbox
+brew install --cask visual-studio-code
 brew install cocoapods
 brew install fastlane
 
@@ -55,31 +55,25 @@ echo '  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # T
 echo '  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion' >> ~/.zshrc
 
 # .NET SDK for Mac
-brew cask install dotnet-sdk
+brew install --cask dotnet-sdk
 
 ##### Common and Misc Installs
 brew install iterm2
 # TODO: Install iTerm Profile
-brew cask install sizeup
-brew cask install cleanmymac
-brew cask install mailplane
-brew cask install synergy
-brew cask install 1password
-brew cask install 1password-cli
-brew cask install discordA
-brew cask install miro
-brew cask install abstract
-brew cask install postman
-brew cask install sequel-pro
-brew install wp-cli
-brew cask install skitch
-brew cask install spotify
-brew cask install cyberduck
+brew install --cask sizeup
+brew install --cask setapp
+brew install --cask cleanmymac
+brew install --cask 1password
+brew install --cask 1password-cli
+brew install --cask discord
+brew install --cask miro
+brew install --cask postman
+brew install --cask skitch
+brew install --cask spotify
+brew install --cask cyberduck
 brew tap homebrew/cask-drivers
-brew cask install logitech-options
-brew cask install slack
-brew cask install microsoft-teams
-brew cask install docker
+brew install --cask logitech-options
+brew install --cask docker
 brew install awscli
 
 # This is part of pyenv and has to be put at the end of the profile
