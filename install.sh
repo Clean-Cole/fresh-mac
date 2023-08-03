@@ -18,6 +18,8 @@ mkdir ~/code || true;
 
 # Install Brew and turn analytics off
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/$HOME/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 brew analytics off
 
 ##### Install Coding Tools
